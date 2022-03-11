@@ -11,6 +11,11 @@ diharapkan dalam aplikasi ini petani mengetahui berapa untuk atau rugi selama me
 
 ## Entitas dan Atribut
 
+### User
+- ID
+- Nama user
+- Password
+
 ### Menanam
 - ID
 - Nama Benih
