@@ -18,9 +18,11 @@ diharapkan dalam aplikasi ini petani mengetahui berapa untuk atau rugi selama me
 
 ### Menanam
 - ID
+- Nama Lahan
 - Nama Benih
 - Jumlah Benih
 - Harga Benih
+- Jenis tanah
 - Tanggal Menanam
 - Perkiraan Panen
 
@@ -34,8 +36,7 @@ diharapkan dalam aplikasi ini petani mengetahui berapa untuk atau rugi selama me
 ### Panen
 - ID
 - Nama benih
-- Hasil panen berhasil
-- Hasil panen gagal
+- Hasil panen 
 - Harga jual
 - Tanggal panen
 
