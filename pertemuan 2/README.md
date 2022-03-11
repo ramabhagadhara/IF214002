@@ -1,4 +1,7 @@
-# Ide : Sistem pengolahan hasil panen petani
+![Screenshot (234)](https://user-images.githubusercontent.com/100655814/157820188-88c7e2a5-4bab-4112-9e8d-1cc564a0bea8.png)
+
+
+# Ide : Sistem manajemen pengolahan hasil panen petani
 
 ## Deskripsi
 Dalam Aplikasi ini diharapkan dapat membantu petani dalam mengurangi masalah masalah sampai masa panen tiba 
