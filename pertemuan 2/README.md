@@ -18,9 +18,17 @@ diharapkan dalam aplikasi ini petani mengetahui berapa untuk atau rugi selama me
 - ID
 - Nama user
 - Password
+- Status
 
-### Menanam
+### Petugas
 - ID
+- Nama_Petugas
+- Nohp_petugas
+- alamat_petugas
+
+### Penanaman
+- ID
+- Petugas
 - Nama Lahan
 - Nama Benih
 - Jumlah Benih
@@ -29,12 +37,11 @@ diharapkan dalam aplikasi ini petani mengetahui berapa untuk atau rugi selama me
 - Tanggal Menanam
 - Perkiraan Panen
 
-### Perawatan
+### Bahan & Alat
 - ID
-- Nama Barang
-- Jumlah barang
-- Harga Barang
-- Fungsi Barang
+- Nama Bahan_alat
+- Jumlah Bahan_alat
+- Harga Bahan_alat
 
 ### Panen
 - ID
