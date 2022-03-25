@@ -1,4 +1,4 @@
-![Screenshot (258)](https://user-images.githubusercontent.com/100655814/160034135-8ea1eb5d-1bf9-4193-afc5-207610737fbe.png)
+![Screenshot (259)](https://user-images.githubusercontent.com/100655814/160035208-4cd2a6a9-4689-4c43-a349-ccfa0a27caf5.png)
 
 # Ide : Sistem manajemen pengolahan hasil panen petani
 
