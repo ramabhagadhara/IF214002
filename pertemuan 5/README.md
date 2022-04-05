@@ -1,3 +1,5 @@
+![Pertemuan 3 drawio](https://user-images.githubusercontent.com/100655814/161695265-4a166819-8f9c-4354-afbb-292feb0799bb.png)
+
 # Ide : Sistem manajemen pengolahan hasil panen petani
 
 ## Deskripsi
