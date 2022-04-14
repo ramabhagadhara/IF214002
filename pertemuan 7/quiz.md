@@ -8,7 +8,7 @@
 - trafik pengunjung mal per hari
 
 # rancangan erd karyawan 
-  ![](erd karyawan.drawio.png)
+
 # rancangan table 
 
 # sql 
