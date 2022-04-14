@@ -11,6 +11,7 @@
 ![erd karyawan drawio](https://user-images.githubusercontent.com/100655814/163296954-cdb9710d-ca1a-4175-86c4-bc392f561f68.png)
 
 # rancangan table 
+![tabel karyawan drawio](https://user-images.githubusercontent.com/100655814/163297037-edb052a7-035d-49f2-85c4-e1c1aec6fa05.png)
 
 # sql 
 
