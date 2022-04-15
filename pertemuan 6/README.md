@@ -1,12 +1,6 @@
 # Pertemuan 6 Basis Data - UID dan Normalisasi 
 
- **User**
-  
-  🔑 id
-  |🔑 id_User|Username|Password|Status|
-  |---|---|---|---|
-  |1|Ramabhagadhara|123456|Petugas|
-  
+
   
    **Petugas**
   
