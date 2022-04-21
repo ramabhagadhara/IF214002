@@ -43,5 +43,7 @@
    ![diagram chen drawio](https://user-images.githubusercontent.com/100655814/164355030-907f1edf-92b1-4db2-955e-d361981b71da.png)
 
     
+  d. Buat notasi ERD Crow Foot dari struktur data logical yang mewakili fitur fitur di solusi digital tersebut,lengkap dengan keys,tipe data dan normalisai hingga bentuk ketiga 
+  
   
   
