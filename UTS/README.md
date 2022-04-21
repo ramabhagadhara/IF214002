@@ -40,7 +40,8 @@
    
    c.Buat ERD notasi Chen dari struktur data yang mewakili fitur2 di solusi digital tersebut
    
-   
+   ![diagram chen drawio](https://user-images.githubusercontent.com/100655814/164355030-907f1edf-92b1-4db2-955e-d361981b71da.png)
+
     
   
   
