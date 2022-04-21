@@ -45,5 +45,5 @@
     
   d. Buat notasi ERD Crow Foot dari struktur data logical yang mewakili fitur fitur di solusi digital tersebut,lengkap dengan keys,tipe data dan normalisai hingga bentuk ketiga 
   
-  
+  ![erd notasi crow foot](https://user-images.githubusercontent.com/100655814/164372356-8206af4f-7ae8-44d8-9744-482dfea71bd0.png)
   
