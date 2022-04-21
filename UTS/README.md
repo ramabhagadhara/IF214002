@@ -47,3 +47,6 @@
   
   ![erd notasi crow foot](https://user-images.githubusercontent.com/100655814/164372356-8206af4f-7ae8-44d8-9744-482dfea71bd0.png)
   
+  flowchart 
+  
+  ![flowchart drawio](https://user-images.githubusercontent.com/100655814/164372419-628ff96d-3390-46b3-acf6-dc1965423b65.png)
