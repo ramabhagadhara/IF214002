@@ -95,3 +95,12 @@ INSERT INTO petugas ( id_petugas, username, pass,nama_petugas, nohp_petugas, ala
 ```sql 
 INSERT INTO lahan ( id_lahan, id_petugas, nama_lahan,luas_lahan, jenis_tanah) VALUES (1, '1' , 'pak asep', '1000', 'gambut');
 ```
+### Update 
+```sql 
+UPDATE lahan
+SET
+nama_lahan = 'Pak tatang',
+jenis_tanah = 'rawa'
+WHERE
+id_lahan = 1;
+```
