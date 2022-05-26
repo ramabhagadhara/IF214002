@@ -82,3 +82,11 @@ CREATE TABLE lahan (
           PRIMARY KEY (id_Evaluasi)
           );
 ```
+
+### Data Manipulation Language (DML)
+#### Insert Data 
+### Petugas 
+
+```sql 
+INSERT INTO petugas ( id_petugas, username, pass,nama_petugas, nohp_petugas, alamat) VALUES (1, 'rama' , '1234', 'Rama Bhagadhara', '083213923', 'cibiru');
+```
