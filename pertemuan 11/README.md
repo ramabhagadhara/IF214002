@@ -67,7 +67,7 @@ CREATE TABLE lahan (
         );
 ```
 
-#### Bahan
+#### Evaluasi
 
 ```sql 
   
