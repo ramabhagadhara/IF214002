@@ -90,3 +90,8 @@ CREATE TABLE lahan (
 ```sql 
 INSERT INTO petugas ( id_petugas, username, pass,nama_petugas, nohp_petugas, alamat) VALUES (1, 'rama' , '1234', 'Rama Bhagadhara', '083213923', 'cibiru');
 ```
+
+###P Lahan
+```sql 
+INSERT INTO lahan ( id_lahan, id_petugas, nama_lahan,luas_lahan, jenis_tanah) VALUES (1, '1' , 'pak asep', '1000', 'gambut');
+```
