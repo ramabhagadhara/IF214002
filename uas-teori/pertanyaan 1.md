@@ -7,34 +7,77 @@ Sistem manajemen pengolahan hasil panen petani untuk membantu petani dalam memna
 - penghitung hasil panen perlahan
 
 ### Buat rancangan basis datanya dalam bentuk ER diagram
-![uass drawio](https://user-images.githubusercontent.com/100655814/176568900-8675a314-bc03-47cd-aa0d-43be6b0440a2.png)
+![fix diagram drawio](https://user-images.githubusercontent.com/100655814/176571409-dc250379-7611-445d-8c03-781616123b02.png)
 
 ### Buat model fisik dari basis datanya dalam bentuk query SQL yang meliputi: 1) data definition language untuk pembuatan tabel, 2) data manipulation language untuk contoh data awal, 3) data query language untuk analisis / business intelligence
 - DDL
 
- ```sql
- CREATE TABLE penduduk (
-  id_penduduk INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  kode_daerah INT(15) NOT NULL,
-  no_kk INT(15) NOT NULL,
-  nik INT(15) NOT NULL
-)
- ```
-  
+```sql
+CREATE TABLE petugas(
+ id_petugas int (20) NOT NULL,
+ Username VARCHAR(255) NOT NULL,
+ Pass VARCHAR (255) NOT NULL,
+ Nama_Petugas VARCHAR(255) NOT NULL,
+ NoHp_Petugas VARCHAR(255) NOT NULL,
+ PRIMARY KEY (id_Petugas)
+ );
+
+ CREATE TABLE lahan (
+   id_Lahan INT (20) NOT NULL,
+   id_Petugas INT (20) NOT NULL,
+   Nama_Lahan VARCHAR (255),
+   Luas_Lahan VARCHAR(255),
+   Jenis_Tanah VARCHAR (255),
+   PRIMARY KEY (id_Lahan)
+   );
+   
+   CREATE TABLE penanaman{
+   id_Penanaman INT (20) NOT NULL,
+   id_Lahan INT (20) NOT NULL,
+   Nama_Benih VARCHAR (255) NOT NULL,
+   Jumlah_Benih INT (20) NOT NULL,
+   Harga_Benih INT (20) not NULL,
+   Tanggal_Menanam DATE,
+   PRIMARY KEY(id_Penanaman)
+   );
+   
+   CREATE TABLE bahan(
+     id_Bahan INT (20) NOT NULL,
+     id_Penanaman INT (20) NOT NULL,
+     Nama_Bahan VARCHAR (255) NOT NULL,
+     Jumlah_Bahan INT (20) NOT NULL,
+     Satuan VARCHAR (255) NOT NULL,
+     Harga_Bahan INT (20) not NULL,
+     PRIMARY KEY (id_Bahan)
+     );
+     
+     CREATE TABLE panen (
+       id_Panen INT (20) NOT NULL,
+       id_Penanaman INT (20) NOT NULL,
+       id_lahan INT (20) NOT NULL,
+       Hasil_Panen INT (20) NOT NULL,
+       Harga_Panen INT (20) Not NULL,
+       Tanggal_Panen DATE,
+       PRIMARY KEY (id_Panen)
+       );
+       
+   ```
   ```sql
-CREATE TABLE daerah (
-  kode_daerah INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  nama_daerah VARCHAR(40) NOT NULL
-)
- ```
-  ```sql
-ALTER TABLE `penduduk` ADD FOREIGN KEY (`kode_daerah`) REFERENCES `daerah`(`kode_daerah`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `penduduk` ADD FOREIGN KEY (`id_lahan`) REFERENCES `lahan`(`id_lahan`) ON DELETE RESTRICT ON UPDATE RESTRICT;
   ```
 - DML 
 
 ```sql
-INSERT INTO `daerah` (`kode_daerah`, `nama_daerah`) VALUES ('2201', 'cibiru'), ('2202', 'ujung berung'), ('2203', 'cimahi');
+INSERT INTO `petugas` (`id_petugas`, `username`,'pass','nama_petugas','noHp_petugas') VALUES ('', 'petugas1','1234','ronaldo','08876433315'), ('', 'petugas2','12346','messi','08876433316'), ('', 'petugas3','12345','ronaldo','08876433313')
 ```
+- DQL
+
 ```sql
-INSERT INTO `penduduk` (`id_penduduk`, `kode_daerah`, `no_kk`, `nik`) VALUES (NULL, '2201', '123456789', '121212344'), (NULL, '2201', '123456789', '121212345'), (NULL, '2201', '123456789', '121212346'), (NULL, '2201', '123456789', '121212347'), (NULL, '2201', '123456789', '121212348'), (NULL, '2202', '123456788', '114536742'), (NULL, '2202', '123456788', '114536742'), (NULL, '2203', '123456778', '757675657');
+SELECT nama_benih, COUNT(*) AS jumlah FROM `penanaman` GROUP BY nama_benih 
+  ```
+  ```sql
+SELECT id_lahan,SUM(hasil_panen) AS total_jumlah FROM panen GROUP BY id_lahan
+  ```
+  ```sql
+SELECT id_lahan,hasil_panen,harga_jual,tanggal_panen,harga_jual*hasil_panen AS total FROM panen WHERE id_lahan = '$id_lahan' GROUP BY total
   ```
