@@ -1,8 +1,10 @@
 ### Rancang solusi digital dari permasalahan yang teman-teman anggap penting untuk diselesaikan
-Dalam Masalah ini saya akan merancan solusi digital terkait jumlah penduduk yang terus melunjak di kota besar yang dimana akan membuat kota itu overpopulation dan membuat kesenjagan sosial yang lebar
+Sistem manajemen pengolahan hasil panen petani untuk membantu petani dalam memnatau perkembangan hasil tani
 
 ### Tentukan fitur-fitur utama dari solusi digital tersebut 
-- penghitung jumlah penduduk di daerah yang over population
+- penghitung jumlah benih yang banyak di tanam
+- penghitung keuntungan setiap lahan
+- penghitung hasil panen perlahan
 
 ### Buat rancangan basis datanya dalam bentuk ER diagram
 ![uass drawio](https://user-images.githubusercontent.com/100655814/176568900-8675a314-bc03-47cd-aa0d-43be6b0440a2.png)
